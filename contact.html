@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <script src="script.js"></script>
+    <title>Plateforme</title>
+</head>
+<body>
+
+    <!--HEADER-->
+    <header>
+        <h1 class="head"><a href="index.html" class="head">E-Learning</a></h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html" class="links">Accueil</a></li>
+                <li><a href="cours.html" class="links">Cours</a></li>
+                <li><a href="exercices.html" class="links">Exercices</a></li>
+                <li><a href="examens.html" class="links">Examens</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html"><button>Contact</button></a>
+    </header>
+    <!--MAIN-->
+    <div class="container">
+        <form action="mail.php" method="post">
+            <table>
+                <tr>
+                    <td><label for="name">Nom complet</label></td>
+                    <td><input type="text"  name="name" placeholder="Nom, prénom..." required></td>
+                </tr>
+                <tr class="space"></tr>
+                <tr>
+                    <td><label for="lname">Email</label></td>
+                    <td><input type="email"  name="email" placeholder="Your email..." required></td>
+                </tr>
+                <tr class="space"></tr>
+                <tr>
+                    <td><label for="message">Message</label></td>
+                    <td><textarea  name="message" placeholder="Tapez votre message..." style="height:200px" required></textarea></td>
+                </tr>
+                <tr class="space"></tr>
+            </table>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+
+</body>
+</html>
